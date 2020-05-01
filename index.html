@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!--Чуть ниже еще второй вариант кода. В одной из статй, что ты скинул говорилось о том, что не желательно
+использовать тег <p></p> как во втором варианте(можно ли?), но на htmlbook.ru есть пример, где так и сделано. 
+Но со списками мне кажется правильнее, хоть и выглядит на странице не очень, но потом же в CSS метки убираются-->
+<body>
+    <h1>Форма</h1>
+    <form>
+        <p><b>Ваше имя:</b><br><input type="text" size="50" required></p>
+        <p><b>Номер телефона:</b><br><input type="text" size="50" required placeholder="+XXX XX XXX-XX-XX"></p>
+        <p><b>Почта:</b><br><input type="email" size="50" required placeholder="mycourses@mail.com"></p>
+        <p><b>Пароль:</b><br><input type="password" size="50" required></p>
+        <p><b>На какой курс Вы записались?</b></p>
+        <ul>   
+            <li><input type="radio" name="course" value="Frontend">Front end разработчик</li>
+            <li><input type="radio" name="course" value="Java">Java разработчик</li>
+            <li><input type="radio" name="course" value="Python">Python разработчик</li>
+        </ul>  
+        <p><b>Какой у Вас уровень английского?</b></p>
+        <ul>  
+            <li><input type="radio" name="eng-lvl" value="A0">Beginner</li>
+            <li><input type="radio" name="eng-lvl" value="A1">Elementary</li>
+            <li><input type="radio" name="eng-lvl" value="A2">Pre-intermidiate</li>
+            <li><input type="radio" name="eng-lvl" value="B1">Intermidiate</li>
+            <li><input type="radio" name="eng-lvl" value="B2">Upper-intermidiate</li>
+            <li><input type="radio" name="eng-lvl" value="C1">Advanced</li>
+        </ul>
+        <p><b>Ваши ожидания от курсов?</b><br><textarea rows="10" cols="50" wrap="hard" placeholder="Введите текст"></textarea></p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">  
+    </form>
+
+<!--<h1>Форма</h1>
+    <form>
+        <p><b>Ваше имя:</b><br>
+            <input type="text" size="50" required>
+        </p>
+        <p><b>Номер телефона:</b><br>
+            <input type="text" size="50" required placeholder="+XXX XX XXX-XX-XX">
+        </p>
+        <p><b>Почта:</b><br>
+            <input type="email" size="50" required placeholder="mycourses@mail.com">
+        </p>
+        <p><b>Пароль:</b><br>
+            <input type="password" size="50" required>
+        </p>
+        <p><b>На какой курс Вы записались?</b><br>
+            <input type="radio" name="course" value="Frontend">Front end разработчик<br>
+            <input type="radio" name="course" value="Java">Java разработчик<br>
+            <input type="radio" name="course" value="Python">Python разработчик
+        </p>
+        <p><b>Какой у Вас уровень английского?</b><br>
+            <input type="radio" name="eng-lvl" value="A0">Beginner<br>
+            <input type="radio" name="eng-lvl" value="A1">Elementary<br>
+            <input type="radio" name="eng-lvl" value="A2">Pre-intermidiate<br>
+            <input type="radio" name="eng-lvl" value="B1">Intermidiate<br>
+            <input type="radio" name="eng-lvl" value="B2">Upper-intermidiate<br>
+            <input type="radio" name="eng-lvl" value="C1">Advanced
+        </p>
+        <p><b>Ваши ожидания от курсов?</b><br>
+            <textarea rows="10" cols="50" wrap="hard" placeholder="Введите текст"></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">  
+    </form>
+-->
+</body>
+</html>
